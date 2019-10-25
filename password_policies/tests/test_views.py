@@ -1,4 +1,4 @@
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 
 from password_policies.forms import PasswordPoliciesChangeForm
 from password_policies.models import PasswordHistory

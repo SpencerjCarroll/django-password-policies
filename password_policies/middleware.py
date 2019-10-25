@@ -1,6 +1,6 @@
 import re
 from datetime import timedelta
-from django.core.urlresolvers import resolve, reverse, NoReverseMatch, \
+from django.urls import resolve, reverse, NoReverseMatch, \
     Resolver404
 from django.http import HttpResponseRedirect
 from django.utils import timezone
