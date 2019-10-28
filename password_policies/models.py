@@ -20,7 +20,7 @@ Has the following fields:
                                 help_text=_('The user who needs to change '
                                             'his/her password.'),
                                 related_name='password_change_required',
-                                on_delete='models.CASCADE')
+                                on_delete=models.deletion.CASCADE)
 
     class Meta:
         get_latest_by = 'created'
@@ -45,7 +45,7 @@ Has the following fields:
                              help_text=_('The user this password history '
                                          'entry belongs to.'),
                              related_name='password_history_entries',
-                             on_delete='models.CASCADE')
+                             on_delete=models.deletion.CASCADE)
 
     objects = PasswordHistoryManager()
 
